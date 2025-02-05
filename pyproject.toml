@@ -5,7 +5,8 @@ description = "convo-newsletter-crew using crewAI"
 authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10,<3.13"
 dependencies = [
-    "crewai>=0.100.0"
+    "crewai>=0.100.0",
+    "exa_py>=1.8.7"
 ]
 
 [project.scripts]
