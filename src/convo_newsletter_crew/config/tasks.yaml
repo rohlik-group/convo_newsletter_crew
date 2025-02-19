@@ -34,6 +34,7 @@ generate_outline_task:
       - Conclusion: Reinforce takeaways and encourage action.
       - PS: Drive engagement or referrals.
     - Add 2-3 potential talking points for each section to guide the next task.
+    Note: If the raw brain dump contains dense, ambiguous, or multifaceted information, leverage the advanced processing tool integrated into your agent to extract and refine critical insights. This tool aids in clarifying complex inputs and ensures that the resulting outline is coherent and richly detailed.
 
     Here is the author's original brain dump:
     {brain_dump}
@@ -70,13 +71,8 @@ write_newsletter_task:
     - Use a conversational and motivational tone inspired by Nicolas Cole.
     - Start with a strong hook in the intro to capture attention.
     - Ensure each section is easy to skim (e.g., use subheadings, bullet points, and short paragraphs).
-    - Provide actionable insights in the Deep Dive, formatted as a step-by-step guide or framework.
-      - This is the most important part of the newsletter so provide plenty of content in here
-        by expanding in each sub-section through examples, case studies, and other relevant content.
-    - Do not write in long paragraphs. Instead, make sure your writing is skimmable and easy to consume
-      which means breaking up contents into easy to read chunks with subheadings, bullet points, and short paragraphs.
-      When writing paragraphs, use the 1-3-1 style, 1-5-1 style, 1-3-1-1 style, etc to make 
-      the content more skimmable and easy to read.
+    - Do not write in long paragraphs. Instead, make sure your writing is skimmable and easy to consume.
+    - Note: If the provided outline or raw input is ambiguous or complex, leverage the advanced processing tool integrated into your agent to extract clear and actionable insights.
     - If applicable, include a curated list of tools, resources, or links relevant to the topic.
     - Add a conclusion that reinforces key takeaways and includes a strong CTA.
     - Use a compelling PS to encourage referrals, engagement, or sign-ups.
@@ -132,6 +128,8 @@ review_newsletter_task:
 
     Important:
     - Only respond with the final newsletter draft, no other text or commentary.
+
+    Note: If sections of the newsletter draft appear ambiguous or contain unclear directives, leverage the advanced processing tool integrated into your agent to suggest improvements and provide clarifications.
 
     Here is the author's original brain dump:
     {brain_dump}

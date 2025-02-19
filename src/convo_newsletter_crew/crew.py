@@ -1,6 +1,7 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai.llm import LLM
+from convo_newsletter_crew.tools.exa_tool import EXATool
 
 from convo_newsletter_crew.tools.word_counter_tool import WordCounterTool
 
@@ -26,7 +27,7 @@ class ConvoNewsletterCrew:
         # Configure the LLM once for all agents
         self.llm = LLM(
             model=model,
-            temperature=0.7,
+            temperature=0.1,
             api_key=api_key
         )
 
@@ -37,6 +38,7 @@ class ConvoNewsletterCrew:
     def synthesizer(self) -> Agent:
         return Agent(
             config=self.agents_config["synthesizer"], 
+            tools=[EXATool()],
             verbose=True,
             llm=self.llm,
             )
